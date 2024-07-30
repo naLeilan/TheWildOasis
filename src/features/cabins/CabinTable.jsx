@@ -3,6 +3,7 @@ import { getCabins } from "../../services/apiCabins";
 import Spinner from "../../ui/Spinner";
 import styled from "styled-components";
 import CabinRow from "./CabinRow";
+import { useState } from "react";
 
 const Table = styled.div`
   border: 1px solid var(--color-grey-200);
@@ -45,7 +46,7 @@ function CabinTable() {
       <TableHeader role="row">
         <div></div>
         <div>Cabin</div>
-        <div>capacity</div>
+        <div>Capacity</div>
         <div>Price</div>
         <div>Discount</div>
         <div></div>
